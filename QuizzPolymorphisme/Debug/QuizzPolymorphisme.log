@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: Le répertoire intermédiaire (Debug\) contient des fichiers partagés provenant d'un autre projet (QuizzPolymorphisme.vcxproj). Cela peut entraîner un comportement de nettoyage et de régénération incorrect.
+  main.cpp
+C:\Users\client\source\repos\QuizzPolymorphisme\QuizzPolymorphisme\main.cpp(147,22): warning C4154: suppression d'une expression de tableau ; conversion en pointeur fournie
+  QuizzPolymorphisme.vcxproj -> C:\Users\client\source\repos\QuizzPolymorphisme\Debug\TravailPratique1.exe

@@ -20,9 +20,9 @@ int main() {
 	// Tableau des employéEs
 	EmployeE* employees[max];
 
-	EmployeE* gratton;
-	EmployeE* faizan;
-	EmployeE* rodrigo;
+	EmployeE* emp1;
+	EmployeE* emp2;
+	EmployeE* emp3;
 
 	printf("Bonjour et bienvenue dans le Systeme de gestion de l'Organisation.\n");
 
@@ -59,8 +59,8 @@ int main() {
 			std::cout << "Entrez le nombre d'heures travaillees par l'employeE : ";
 			std::cin >> nbre_heures;
 			std::cout << "L'employeE a ete ajouteE avec succes ! ";
-			gratton = new SyndiqueE(nom, matricule, taux_horaire, nbre_heures);
-			employees[0] = gratton;
+			emp1 = new SyndiqueE(nom, matricule, taux_horaire, nbre_heures);
+			employees[0] = emp1;
 			}
 			break;
 		case 2:
@@ -76,8 +76,8 @@ int main() {
 			std::cout << "Entrez la duree du contrat en semaines : ";
 			std::cin >> les_semaines;
 			std::cout << "L'employeE a ete ajouteE avec succes ! ";
-			faizan = new ContractuelLE(nom, matricule, le_montant_contrat, les_semaines);
-			employees[1] = faizan;
+			emp2 = new ContractuelLE(nom, matricule, le_montant_contrat, les_semaines);
+			employees[1] = emp2;
 			}
 			break;
 		case 3:
@@ -91,27 +91,13 @@ int main() {
 			std::cout << "Entrez le montant total qui sera paye : ";
 			std::cin >> le_montant;
 			std::cout << "L'employeE a ete ajouteE avec succes ! ";
-			rodrigo = new PonctuelLE(nom, matricule, le_montant);
-			employees[2] = rodrigo;
+			emp3 = new PonctuelLE(nom, matricule, le_montant);
+			employees[2] = emp3;
 			}
 			break;
 		case 4:
 			{
 			std::cout << "Vous avez choisi d'afficher le resultat de la paie pour les employeEs entreEs." << std::endl;
-
-			//EmployeE* gratton = new SyndiqueE("Gratton", 54123, 20.55, 37.5);
-			//EmployeE* faizan = new ContractuelLE("Faizan", 12354, 5000, 7);
-			//EmployeE* rodrigo = new PonctuelLE("Rodrigo", 23451, 250);
-
-			//EmployeE* gratton = new SyndiqueE(nom, matricule, taux_horaire, nbre_heures);
-			//EmployeE* faizan = new ContractuelLE(nom, matricule, le_montant_contrat, les_semaines);
-			//EmployeE* rodrigo = new PonctuelLE(nom, matricule, le_montant);
-
-
-			////Ajout des employées dans le tableau
-			//employees[0] = gratton;
-			//employees[1] = faizan;
-			//employees[2] = rodrigo;
 
 			//Calcul de la paie et affichage des informations par employé
 			double montantsTotaux = 0;
@@ -126,7 +112,7 @@ int main() {
 				impotsQC = impotsQC + employees[i]->calculImpotsProvinciaux();
 			}
 
-			//Calcul des montants totaux
+			//Calcul des montants totaux et des impots CA et QC
 			std::cout << std::endl;
 			std::cout << "TOTAUX" << std::endl;
 			std::cout << "Montants totaux verses de " << montantsTotaux;

@@ -1,8 +1,3 @@
-﻿  contractuelLE.cpp
-  employeE.cpp
-  main.cpp
-C:\Users\client\source\repos\TravailPratique1_Lucien_BERRY\TravailPratique1LB\QuizzPolymorphisme\main.cpp(147,22): warning C4154: suppression d'une expression de tableau ; conversion en pointeur fournie
-  ponctuelLE.cpp
-  syndiqueE.cpp
-  Génération de code en cours...
+﻿  main.cpp
+C:\Users\client\source\repos\TravailPratique1_Lucien_BERRY\TravailPratique1LB\QuizzPolymorphisme\main.cpp(133,22): warning C4154: suppression d'une expression de tableau ; conversion en pointeur fournie
   QuizzPolymorphisme.vcxproj -> C:\Users\client\source\repos\TravailPratique1_Lucien_BERRY\TravailPratique1LB\x64\Debug\TravailPratique1.exe
